@@ -1,0 +1,9 @@
+Server: would store the code that detemines the most efficient way
+to request any of that data from the database
+
+Authentication: determines that the user at that is trying to access the server or
+the database is who they say they are
+
+Firebase is generally a solution or a platform that has all of this
+handled for us so we didn't actually have to write any back end code at all
+
