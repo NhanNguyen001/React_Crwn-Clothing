@@ -7,3 +7,13 @@ the database is who they say they are
 Firebase is generally a solution or a platform that has all of this
 handled for us so we didn't actually have to write any back end code at all
 
+<! - The Firebase core JS SDK is always required and must be listed first -> 
+< src script = "https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js" > 
+</ script> 
+<! - TODO: Add SDKs for Firebase products that you want to use      https://firebase.google.com/docs/web/setup#config-web-app -> 
+<script> // Your web app's Firebase configuration 
+var firebaseConfig = {     apiKey : "AIzaSyD8FB_gOePiUsrAgU5oXhyj5R7zeqmiDtY" ,     authDomain : "crwn-clothing-60481.firebaseapp.com" ,     databaseURL : "https: // crwn-clothing-60481.firebaseio.com " ,
+ 
+
+projectId : "crwn-clothing-60481" ,     storageBucket : "" ,     messagingSenderId : "839834938162" ,     appId : "1: 839834938162: web: cd0128147d31d09f" }; // Initialize Firebase   firebase . initializeApp ( firebaseConfig ); </ script> 
+ 
