@@ -16,3 +16,9 @@ collections
 
 
 documents: 
+
+
+React rules:
+whem ever we make this update we always to return a new array even if the object stays the same
+
+Utility functions: allow us to keep our files clean and organize functions that we may need in multiple files in one location
