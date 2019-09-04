@@ -4,8 +4,6 @@ to request any of that data from the database
 Authentication: determines that the user at that is trying to access the server or
 the database is who they say they are
 
-Firebase is generally a solution or a platform that has all of this
-handled for us so we didn't actually have to write any back end code at all
 
 
 collection: it's like a group of object except those object
@@ -22,3 +20,14 @@ React rules:
 whem ever we make this update we always to return a new array even if the object stays the same
 
 Utility functions: allow us to keep our files clean and organize functions that we may need in multiple files in one location
+
+
+Data Normalization: is the ideal way that we should be storing large arrays of elements
+where we need the individual element inside of our reducer
+
+Definition: ---> you can store lists of elements as objects instead of arrays
+
+this is actually a pretty common thing that will encounter when talking about back ends and databases
+
+
+
