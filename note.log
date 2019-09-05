@@ -26,8 +26,10 @@ Data Normalization: is the ideal way that we should be storing large arrays of e
 where we need the individual element inside of our reducer
 
 Definition: ---> you can store lists of elements as objects instead of arrays
-
 this is actually a pretty common thing that will encounter when talking about back ends and databases
+(hash table)
+
+Data Flow:
 
 
 
