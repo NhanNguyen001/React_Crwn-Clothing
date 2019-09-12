@@ -29,6 +29,10 @@ Definition: ---> you can store lists of elements as objects instead of arrays
 this is actually a pretty common thing that will encounter when talking about back ends and databases
 (hash table)
 
+
+styled-component: really help us make sure that we keep all our components and what the component is concerned
+about in one place in our javascript
+
 Data Flow:
 
 
