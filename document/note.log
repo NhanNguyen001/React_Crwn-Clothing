@@ -5,7 +5,7 @@ Authentication: determines that the user at that is trying to access the server 
 the database is who they say they are
 
 
-
+********
 collection: it's like a group of object except those object
 are the second type of data called documents
 you can almost see them as an array of things and each 
@@ -13,9 +13,15 @@ of those things can also have properties that point to others
 collections
 
 
-documents: 
+documents:
+doc.data() in order to get the data of the snapshot
 
 
+collectionRef.onSnapshot(): whenever the collection ref updates or whenever this code gets run for the first time
+this collection ref will send us the snapshot representing the code of our collections objects array at the time
+when this code renders
+
+********
 React rules:
 whem ever we make this update we always to return a new array even if the object stays the same
 
