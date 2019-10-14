@@ -1,5 +1,7 @@
 import { combineReducers } from 'redux';
+// Declare persistReducer
 import { persistReducer } from 'redux-persist';
+// defaults to localStorage for web
 import storage from 'redux-persist/lib/storage';
 
 import userReducer from './user/user.reducer';
@@ -8,7 +10,7 @@ import directoryReducer from './directory/directory.reducer';
 import shopReducer from './shop/shop.reducer';
 
 const persistConfig = {
-  key: 'root ',
+  key: 'root',
   storage,
   whitelist: ['cart']
 };
@@ -20,4 +22,5 @@ const rootReducer = combineReducers({
   shop: shopReducer
 });
 
+// Modify version of rootReducer with persistConfig
 export default persistReducer(persistConfig, rootReducer);
