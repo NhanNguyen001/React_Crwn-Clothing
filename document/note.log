@@ -17,13 +17,14 @@ documents:
 doc.data() in order to get the data of the snapshot
 
 
-collectionRef.onSnapshot(): whenever the collection ref updates or whenever this code gets run for the first time
+collectionRef.onSnapshot(): whenever the collection ref updates or 
+whenever this code gets run for the first time
 this collection ref will send us the snapshot representing the code of our collections objects array at the time
 when this code renders
 
 ********
-React rules:
-whem ever we make this update we always to return a new array even if the object stays the same
+React Firebase rules:
+when ever we make this update we always to return a new array even if the object stays the same
 
 Utility functions: allow us to keep our files clean and organize functions that we may need in multiple files in one location
 
@@ -42,4 +43,34 @@ about in one place in our javascript
 Data Flow:
 
 
+High Order Component: It's just a function that takes a component and then returns a new component
+that has additional functionality on it that renders out our original component that we
+gave to it
+
+
+
+******Observables + Observer Pattern:
+The observable is capable of stopping the stream at some point.
+
+The observable just knows that there's going to be different listeners listening
+to it once it subscribes.
+
+The moment it subscribes the observer what gets a reference to this 
+subscription and it will just call the next whenever it gets a new value call,
+the error or whatever gets an error and code complete whenever a complete
+if at any point a cup piece of code tells the observervable hey i want to 
+unsubscribe from you. => The observer just takes that reference and throws it out
+and it's like oh I don't need the subscription => I'm just going to continue
+emitting my events and firing these functions calls on all of the other observers
+that are still listening to me
+
+
+
+
+
+Whenever i get a new value inside of my stream 
+I'm just gonna give that to the next function
+
+The complete call rarely happens inside a firebase because firebase is a live
+database which means that updates can always happen
 
