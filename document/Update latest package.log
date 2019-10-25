@@ -1,1 +1,27 @@
+*****YARN
 yarn list react react-dom react-scripts
+
+yarn upgrade
+
+
+yarn.lock ==> The lock file is simply there so that if multiple people are working on this application they are all using versions
+of these dependencies that don't conflict with each other
+
+==> lock file just ensures that everybody is using a consistent version of these dependencies but with that after we ran your install
+we generated a new lock file
+
+
+
+******MODULE
+npm list react react-dom react-scripts
+
+npm update  !== npm install sometimes will skip ovser certain versions if it doesn't see that it's a major update
+
+
+*****
+Vulnerabilities you might see this number change sometimes whether you see it as a warning in your github
+Vulnerabilities are essentially at these minor security concerns, sometimes they're major most of the time they're minor.
+That has to do with either a dependency that you have installed or a dependency that your packages depend upon that you
+yourself don't know that you also installed.  ==> run npm audit fix 
+
+****YARN not easy to audit
