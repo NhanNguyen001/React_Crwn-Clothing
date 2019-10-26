@@ -74,3 +74,15 @@ I'm just gonna give that to the next function
 The complete call rarely happens inside a firebase because firebase is a live
 database which means that updates can always happen
 
+
+******
+Call is the effect inside of our generator function that invokes the method, we can 
+technically write this the exact same way
+All the call syntax is it's a method that takes as its first argument some function or 
+method and then the subsequent arguments will be the parameters that you passed into 
+this function
+
+
+*****
+Put is the saga effect for creating action and it's exactly dispatch
+
