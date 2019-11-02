@@ -100,6 +100,11 @@ to come in which means that 3 increment actions are running on three new on incr
 
 takeLatest() cancel every previous spawn saga that was generated except for the latest one
 
+takeLatest and takeEvery being what allows this saga that's actually catch this fetch collection
+start action that the saga passes to all of our sagas and then depending on what the success
+or failure of the actuall fetch call from the firestore was we put out new fetch collection
+success or fetch collection failure actions so "put" essentially the saga way of dispatching
+new actions
 
 *****all()
 all(): takes an array of sagas
