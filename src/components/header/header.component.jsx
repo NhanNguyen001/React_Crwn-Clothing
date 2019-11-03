@@ -2,7 +2,6 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 
-import { auth } from '../../firebase/firebase.utils';
 import CartIcon from '../cart-icon/cart-icon.component';
 // import CartDropDown from '../cart-dropdown/cart-dropdown.component';
 import CartDropDownContainer from '../cart-dropdown/cart-dropdown.container';
@@ -18,7 +17,6 @@ import {
   OptionContainer,
   OptionLink
 } from './header.styles';
-import { dispatch } from 'C:/Users/nhan2/AppData/Local/Microsoft/TypeScript/3.6/node_modules/rxjs/internal/observable/pairs';
 
 const Header = ({ currentUser, hidden, signOutStart }) => (
   <HeaderContainer>
