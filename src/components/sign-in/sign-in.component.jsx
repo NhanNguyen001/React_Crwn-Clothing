@@ -33,8 +33,6 @@ const SignIn = ({ emailSignInStart, googleSignInStart }) => {
 
   const handleChange = event => {
     const { value, name } = event.target;
-    console.log(userCredentials);
-
     setCredentials({ ...userCredentials, [name]: value });
   };
 
