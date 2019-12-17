@@ -89,16 +89,20 @@ Put is the saga effect for creating action and it's exactly dispatch
 
 
 *******take() --- takeEvery() --- takeLatest()
-take() is following just the basic generator function that we learned about a few lessions ago
+1. take(): is following just the basic generator function, we don't pass to it anything in the second argument
 
-takeEvery() kicks off a new task using the generator that we passed to it as its second argument
+
+
+2. takeEvery(): kicks off a new task using the generator that we passed to it as its second argument
 for every increment action that come in
 ==>> non-blocking
 ==>> takeEvery is creating new sub tasks. It's spawning new sagas for every increment action
 to come in which means that 3 increment actions are running on three new on increment sagas.
 
 
-takeLatest() cancel every previous spawn saga that was generated except for the latest one
+3. takeLatest(): cancel every previous spawn saga that was generated except for the latest one and only
+trigger the latest one that was clickedc
+
 
 takeLatest and takeEvery being what allows this saga that's actually catch this fetch collection
 start action that the saga passes to all of our sagas and then depending on what the success
